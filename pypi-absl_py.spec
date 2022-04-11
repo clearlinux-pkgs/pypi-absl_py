@@ -4,7 +4,7 @@
 #
 Name     : pypi-absl_py
 Version  : 1.0.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/bc/44/3ab719b4fea06882351cd9f9582c15ba5b4d376992ac40c3ed377761a172/absl-py-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bc/44/3ab719b4fea06882351cd9f9582c15ba5b4d376992ac40c3ed377761a172/absl-py-1.0.0.tar.gz
 Summary  : Abseil Python Common Libraries, see https://github.com/abseil/abseil-py.
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641396841
+export SOURCE_DATE_EPOCH=1649701987
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
