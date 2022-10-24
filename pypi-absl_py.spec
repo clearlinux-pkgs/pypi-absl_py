@@ -4,7 +4,7 @@
 #
 Name     : pypi-absl_py
 Version  : 1.3.0
-Release  : 16
+Release  : 17
 URL      : https://files.pythonhosted.org/packages/a8/66/2b190f1ad948a0f5a84026eb499c123256d19f48d159b1462a4a98634be3/absl-py-1.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a8/66/2b190f1ad948a0f5a84026eb499c123256d19f48d159b1462a4a98634be3/absl-py-1.3.0.tar.gz
 Summary  : Abseil Python Common Libraries, see https://github.com/abseil/abseil-py.
