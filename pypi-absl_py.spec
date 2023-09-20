@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-absl_py
-Version  : 1.4.0
-Release  : 23
-URL      : https://files.pythonhosted.org/packages/79/c9/45ecff8055b0ce2ad2bfbf1f438b5b8605873704d50610eda05771b865a0/absl-py-1.4.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/79/c9/45ecff8055b0ce2ad2bfbf1f438b5b8605873704d50610eda05771b865a0/absl-py-1.4.0.tar.gz
+Version  : 2.0.0
+Release  : 24
+URL      : https://files.pythonhosted.org/packages/c6/09/fe8d9ab3e640b12322f8f73448db3428bf417b7dcfe14702fc7413e6c5c9/absl-py-2.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c6/09/fe8d9ab3e640b12322f8f73448db3428bf417b7dcfe14702fc7413e6c5c9/absl-py-2.0.0.tar.gz
 Summary  : Abseil Python Common Libraries, see https://github.com/abseil/abseil-py.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -53,10 +53,10 @@ python3 components for the pypi-absl_py package.
 
 
 %prep
-%setup -q -n absl-py-1.4.0
-cd %{_builddir}/absl-py-1.4.0
+%setup -q -n absl-py-2.0.0
+cd %{_builddir}/absl-py-2.0.0
 pushd ..
-cp -a absl-py-1.4.0 buildavx2
+cp -a absl-py-2.0.0 buildavx2
 popd
 
 %build
@@ -64,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683035210
+export SOURCE_DATE_EPOCH=1695170466
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
