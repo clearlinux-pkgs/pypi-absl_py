@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-absl_py
-Version  : 2.1.0
-Release  : 33
-URL      : https://files.pythonhosted.org/packages/7a/8f/fc001b92ecc467cc32ab38398bd0bfb45df46e7523bf33c2ad22a505f06e/absl-py-2.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/7a/8f/fc001b92ecc467cc32ab38398bd0bfb45df46e7523bf33c2ad22a505f06e/absl-py-2.1.0.tar.gz
+Version  : 2.2.0
+Release  : 34
+URL      : https://files.pythonhosted.org/packages/56/4b/7b52d478801e5faf25c3b48c0c9f3c580b82446297021166a2b2393ecfdc/absl_py-2.2.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/56/4b/7b52d478801e5faf25c3b48c0c9f3c580b82446297021166a2b2393ecfdc/absl_py-2.2.0.tar.gz
 Summary  : Abseil Python Common Libraries, see https://github.com/abseil/abseil-py.
 Group    : Development/Tools
 License  : Apache-2.0
@@ -55,13 +55,13 @@ python3 components for the pypi-absl_py package.
 
 
 %prep
-%setup -q -n absl-py-2.1.0
-cd %{_builddir}/absl-py-2.1.0
+%setup -q -n absl_py-2.2.0
+cd %{_builddir}/absl_py-2.2.0
 pushd ..
-cp -a absl-py-2.1.0 buildavx2
+cp -a absl_py-2.2.0 buildavx2
 popd
 pushd ..
-cp -a absl-py-2.1.0 buildapx
+cp -a absl_py-2.2.0 buildapx
 popd
 
 %build
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740082710
+export SOURCE_DATE_EPOCH=1742514922
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -123,7 +123,7 @@ LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-absl_py
-cp %{_builddir}/absl-py-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-absl_py/2b8b815229aa8a61e483fb4ba0588b8b6c491890 || :
+cp %{_builddir}/absl_py-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-absl_py/2b8b815229aa8a61e483fb4ba0588b8b6c491890 || :
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
