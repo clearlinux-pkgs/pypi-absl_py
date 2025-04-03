@@ -1,5 +1,5 @@
 PKG_NAME := pypi-absl_py
-URL = https://files.pythonhosted.org/packages/40/17/fa94446133df730f1a30f89ed9f3967d62ac0c0e535522ea4d46288924a5/absl_py-2.2.1.tar.gz
+URL = https://files.pythonhosted.org/packages/b5/f0/e6342091061ed3a46aadc116b13edd7bb5249c3ab1b3ef07f24b0c248fc3/absl_py-2.2.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
